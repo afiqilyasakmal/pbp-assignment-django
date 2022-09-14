@@ -29,7 +29,7 @@ from django.shortcuts import render
 Lalu jangan lupa di dalam fungsi `show_katalog` kita tambahkan kode
 ```
 'list_barang': data_barang_katalog,
-'nama': ‘<NAMA>’
+'nama': ‘Afiq Ilyasa Akmal’
 ```
 yang berfungsi memanggil fungsi *query* ke model *databas* dan menyimpannya ke suatu variabee `list_barang`. Tambahkan parameter `context` dimana data pada variabel `context` akan dirender oleh Django yang bisa nantinya kita tampilkan di halaman HTML. Pada tahap ini, kita sudah melakukan pemetaan data ke dalam HTML. Selanjutnya kita bisa mengatur *file* dalam folder template tadi untuk menampilkan data yang kita punya. 
 
