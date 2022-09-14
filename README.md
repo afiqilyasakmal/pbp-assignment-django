@@ -7,7 +7,9 @@ Tautan aplikasi Heroku tugas 2 PBP ini dapat dilihat [di sini](https://tugas2-pb
 
 Pertama-tama, Ketika users me-*request* sesuatu maka *request* tersebut akan masuk ke server Django dan diproses di `urls.py` di mana di ***urls*** akan dibuat *routing* atau bisa dibilang bagaimana dari *request* tersebut dialihkan ke halaman yang mana yang ada di aplikasi kita. Nah aturan-aturan penanganan *routing* ini diatur di `urls.py`. 
 
-Dari **urls**, permintaan diteruskan di `views.py` di mana di *file* ini terdapat fungsi Python yang mengambil *http request* dan mengembalikan *http response* seperti dokumen HTML. Di bagian ini pula apabila *request* memerlukan *database*, ***views*** dapat memproses hal tersebut dengan memanggil query ke `models.py` dan *database* akan mengembalikan hasil *query* ke ***views*** tadi. Setelah segala request diproses, hasilnya akan ditampilkan ke *user* di *browser* dalam bentuk HTML yang didefinisikan di folder *templates*. *Templates* mana yg digunakan tergantung bagaimana *routing* yang kita atur di bagian `urls.py`.
+Dari **urls**, permintaan diteruskan di `views.py` di mana di *file* ini terdapat fungsi Python yang mengambil *http request* dan mengembalikan *http response* seperti dokumen HTML. Di bagian ini pula apabila *request* memerlukan *database*, ***views*** dapat memproses hal tersebut dengan memanggil query ke `models.py` dan *database* akan mengembalikan hasil *query* ke ***views*** tadi. 
+
+Setelah segala request diproses, hasilnya akan ditampilkan ke *user* di *browser* dalam bentuk HTML yang didefinisikan di folder *templates*. *Templates* mana yg digunakan tergantung bagaimana *routing* yang kita atur di bagian `urls.py`.
 
 ## ***Virtual Environment***
 
