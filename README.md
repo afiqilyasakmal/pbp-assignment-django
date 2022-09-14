@@ -1,12 +1,12 @@
-# Template Proyek Django PBP
+# Tautan Aplikasi Heroku
 
-Pemrograman Berbasis Platform (CSGE602022) - diselenggarakan oleh Fakultas Ilmu Komputer Universitas Indonesia, Semester Ganjil 2022/2023
+Tautan aplikasi Heroku tugas 2 PBP ini dapat dilihat [di sini](https://tugas2-pbp-afiq.herokuapp.com/katalog).
+
+![Bagan](https://i.ibb.co/Qr3vXR3/bagan-cara-kerja-django.png)
 
 *Read this in other languages: [Indonesian](README.md), [English](README.en.md)*
 
-## Pendahuluan
-
-Repositori ini merupakan sebuah template yang dirancang untuk membantu mahasiswa yang sedang mengambil mata kuliah Pemrograman Berbasis Platform (CSGE602022) mengetahui struktur sebuah proyek aplikasi Django serta file dan konfigurasi yang penting dalam berjalannya aplikasi. Kamu dapat dengan bebas menyalin isi dari repositori ini atau memanfaatkan repositori ini sebagai pembelajaran sekaligus awalan dalam membuat sebuah proyek Django.
+Pertama-tama, Ketika users me-*request* sesuatu maka request tersebut akan masuk ke server Django dan diproses di urls.py di mana di urls akan dibuat routing atau bisa dibilang bagaimana dari request tersebut dialihkan ke halaman yang mana yang ada di aplikasi kita. Nah aturan-aturan penanganan routing ini diatur di urls.py. Dari urls, permintaan diteruskan di views.py di mana di file ini terdapat fungsi Python yang mengambil http request dan mengembalikan http response seperti dokumen HTML. Di bagian ini pula apabila request memerlukan database, views dapat memproses hal tersebut dengan memanggil query ke models.py dan database akan mengembalikan hasil query ke views tadi. Setelah segala request diproses, hasilnya akan ditampilkan ke user di browser dalam bentuk HTML yang didefinisikan di folder templates. Templates mana yg digunakan tergantung bagaimana routing yang kita atur di bagian urls.py.
 
 ## Cara Menggunakan
 
