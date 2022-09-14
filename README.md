@@ -1,4 +1,4 @@
-## Tautan Aplikasi Heroku
+## Tautan Aplikasi
 
 Tautan aplikasi Heroku tugas 2 PBP ini dapat dilihat [di sini](https://tugas2-pbp-afiq.herokuapp.com/katalog).
 
