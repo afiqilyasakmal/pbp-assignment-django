@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+ {% block content %}
+
+  <h1>Assignment 3 - Platform-based Programming</h1>
+
+  <h5>Name: </h5>
+  <p>Afiq Ilyasa Akmal</p>
+
+  <h5>Student ID: </h5>
+  <p>2106751291</p>
+
+  <table>
+    <tr>
+      <th>Watched</th>
+      <th>Title</th>
+      <th>Rating</th>
+      <th>Release date</th>
+      <th>Review</th>
+    </tr>
+    {% comment %} Add the data below this line {% endcomment %}
+    {% for film in list_film %}
+      <tr>
+          <th>{{film.film_watched}}</th>
+          <th>{{film.film_title}}</th>
+          <th>{{film.film_rating}}</th>
+          <th>{{film.film_release_date}}</th>
+          <th>{{film.film_review}}</th>
+      </tr>
+    {% endfor %}
+  </table>
+
+ {% endblock content %}
