@@ -21,6 +21,6 @@ Tautan untuk tugas ini:
 6. Melakukan *deployment* (tidak perlu dilakukan lagi sebab pada minggu-minggu sebelumnya kita sudah men-*deploy*). Kita hanya perlu melakukan `git add`, `commit`, dan `push` pada *repository*. Setelah itu kita perlu sedikit melakukan konfigurasi di Heroku yaitu pada bagian *more*, pilih *run a console* > ketik `bash`. Setelah itu pada terminal yang terbuka tuliskan perintah `python manage.py loaddata initial_watchlist_data.json` untuk me-*load* data.
 
 ## Postman
-![HTML](https://i.ibb.co/jzf1pZQ/postman-html.png)
-![JSON](https://i.ibb.co/vQFhfnv/postman-json.png)
-![XML](https://i.ibb.co/52ZcMxG/postman-xml.png)
+![](https://i.ibb.co/jzf1pZQ/postman-html.png)
+![](https://i.ibb.co/vQFhfnv/postman-json.png)
+![](https://i.ibb.co/52ZcMxG/postman-xml.png)
