@@ -19,7 +19,25 @@ Tautan untuk tugas ini:
 4. Menambahkan data ke `initial_mywatchlist_data.json` kemudian memasukkan data tersebut ke *database* lokal Django.
 5. Membuat file HTML pada folder templates untuk menampilkan data-data yang sudah di-*load* tadi dan tidak lupa juga melakukan *routing*. 
 6. Melakukan *deployment* (tidak perlu dilakukan lagi sebab pada minggu-minggu sebelumnya kita sudah men-*deploy*). Kita hanya perlu melakukan `git add`, `commit`, dan `push` pada *repository*. Setelah itu kita perlu sedikit melakukan konfigurasi di Heroku yaitu pada bagian *more*, pilih *run a console* > ketik `bash`. Setelah itu pada terminal yang terbuka tuliskan perintah `python manage.py loaddata initial_watchlist_data.json` untuk me-*load* data.
+7. Melakukan *unit test* dengan menambahkan potongan kode berikut pada `tests.py`:
+```
+class Test(TestCase):
+    def test_html(self):
+        client = Client()
+        response = client.get(reverse("mywatchlist:show_mywatchlist"))
+        self.assertEquals(response.status_code, 200)
 
+    def test_json(self):
+        client = Client()
+        response = client.get(reverse("mywatchlist:show_json"))
+        self.assertEquals(response.status_code, 200)
+
+    def test_xml(self):
+        client = Client()
+        response = client.get(reverse("mywatchlist:show_xml"))
+        self.assertEquals(response.status_code, 200)
+```
+kemudian menjalankan perintah untuk melakukan *unit test*.
 ## Postman
 ![](https://i.ibb.co/jzf1pZQ/postman-html.png)
 ![](https://i.ibb.co/vQFhfnv/postman-json.png)
