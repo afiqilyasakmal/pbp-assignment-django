@@ -1,7 +1,5 @@
 from django.db import models
 
-from django.db import models
-
 class WishlistFilmKu(models.Model):
     film_watched = models.BooleanField()
     film_title = models.TextField()
