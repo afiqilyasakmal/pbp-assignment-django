@@ -17,4 +17,8 @@ Bisa. Kita dapat membuat *form* secara manual melalui HTML dengan memanfaatkan a
 Saat pengguna men-*submit* *task* pada *form* di halaman `create_task`, data akan dikirimkan via *request* POST dan diterima di fungsi `create_task` yang sudah dibuat di *views.py*. Di fungsi tersebut masukan dari *user* diproses dan ditmapung di variabel penampung lalu setelah itu disimpan di *database* menggunakan method `save()`.
 
 ## Implementasi pada *checklist*
-[ntar baru dikerjain]
+Pertama, buat app Django baru dengan perintah `startapp` kemudian tambahkan aplikasi **todolist** ini ke INSTALLED_APPS di `settings.py`. Buat model di `models.py` sesuai dengan spesifikasi yang diminta soal lalu lakukan migrasi. 
+
+Kedua, membuat halaman login, registrasi, dan logout sesuai yang ada di perintah lab 3. Lalu dibuat juga halaman create_task yang berisi form yang bersesuaian dengan fungsi create_task yang menerima argumen request dan id di `views.py`. Buat routing di `urls.py` untuk mengarahkan halaman-halaman tadi ke tautan yang sesuai.
+
+Terakhir, melakukan add, commit, dan push ke GitHub kemudian membuat dua `user` dan tiga *dummy data* di kedua user tersebut. 
