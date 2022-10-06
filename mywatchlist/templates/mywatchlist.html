@@ -2,9 +2,12 @@
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,800;1,400;1,800&display=swap');
     body {
         font-family: "Open Sans", sans-serif;
+        font-weight: 500;
+    }
+
+    .bungkus {
         width: 720px;
         margin: 0 auto;
-        font-weight: 500;
     }
 
     h1.title {
@@ -24,7 +27,7 @@
 {% extends 'base.html' %}
 
  {% block content %}
-
+<div class="bungkus">
   <h1 class="title">Assignment 3 - Platform-based Programming</h1>
     <div class="identity">
         <h5>Name: </h5>
@@ -58,5 +61,5 @@
 
      <h2>Pesan: </h2>
   <p>{{pesan}}</p>
-
+</div>
  {% endblock content %}

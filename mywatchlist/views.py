@@ -35,3 +35,5 @@ def show_json(request):
     return HttpResponse(serializers.serialize("json", data), content_type="application/json")
 
 
+
+
