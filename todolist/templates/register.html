@@ -9,7 +9,7 @@
   <div class="d-flex flex-column align-items-center rounded-4 bg-light p-5 mb-5 bg-white rounded">
     <h1>Register</h1>
 
-        <form method="POST" class="d-flex flex-column">
+        <form method="POST"  class="d-flex flex-column">
             {% csrf_token %}
             <div class="d-flex flex-column mb-2">
                 {{ form.as_table }}
@@ -21,11 +21,6 @@
                    <span class="text-primary"><p class = "text-center">Already registered? <a href="{% url 'todolist:login' %}" class="btn btn-danger btn-xs" type="submit" value="Login">Login here</a></p></span>
                 </div>
         </form>
-   {% if messages %}
-            {% for message in messages %}
-                <span class="text-danger">{{ message }}</span>
-            {% endfor %}
-    {% endif %}
   </div>
 </div>
 
