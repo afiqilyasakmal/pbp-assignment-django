@@ -60,7 +60,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="add-task-btn btn-primary" data-bs-dismiss="modal">Save</button>
+        <button type="button" class="new-task-btn btn-primary" data-bs-dismiss="modal">Save</button>
       </div>
     </div>
   </div>
@@ -68,10 +68,10 @@
     <script>
     function getTask() {
       $.get('/todolist/json/', function(data){
-      let content = '';
+      let data_todolist = '';
       for (let i=0; i<data.length; i++){
         let is_finished = data[i].fields.is_finished ? 'Done':'In progress';
-        content += `
+        data_todolist += `
         <div class="col-4">
     <div class="card h-100 ">
       <div class="card-body">
@@ -97,7 +97,7 @@
     $(document).ready( function(){
       $.get("/todolist/json/", getTask);
 
-      $('.add-task-btn').click( function(){
+      $('.new-task-btn').click( function(){
         let title = $('#title-task').val();
         let description = $('#desc-task').val();
         let CSRFtoken = $('input[name="csrfmiddlewaretoken"]').val();
